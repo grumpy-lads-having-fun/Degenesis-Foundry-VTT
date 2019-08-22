@@ -1,0 +1,30 @@
+{
+"actor": {
+  "data": {
+    "biography": {
+      "type": "String",
+      "label": "Biography"
+    },
+    "health": {
+      "type": "Number",
+      "label": "Health",
+      "value": 10,
+      "max": 10
+    },
+    "power": {
+      "type": "Number",
+      "label": "Power",
+      "value": 0,
+      "max": 0
+    }
+  }
+},
+"item": {
+  "data": {
+    "description": {
+      "type": "String",
+      "label": "Description"
+    }
+  }
+}
+}
