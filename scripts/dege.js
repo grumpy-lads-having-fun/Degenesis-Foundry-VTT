@@ -1,4 +1,8 @@
 /**
+ * FOR NOW THIS IS BASIC JS FILE BASED ON 'SIMPLE' SYSTEM
+ */
+
+/**
  * Extend the basic ActorSheet with some very simple modifications
  */
 class SimpleActorSheet extends ActorSheet {

@@ -1,30 +1,398 @@
 {
-"actor": {
-  "data": {
-    "biography": {
-      "type": "String",
-      "label": "Biography"
+    "actor": {
+        "character": {
+            "name": {
+                "type": "String",
+                "label": "Name",
+                "value": ""
+            },
+            "sex": {
+                "type": "String",
+                "label": "Sex",
+                "value": "yes"
+            },
+            "age": {
+                "type": "Number",
+                "label": "Age",
+                "value": ""
+            },
+            "height": {
+                "type": "Number",
+                "label": "Height",
+                "value": ""
+            },
+            "weight": {
+                "type": "Number",
+                "label": "Weight",
+                "value": ""
+            },
+            "experience": {
+                "type": "Number",
+                "label": "Age",
+                "total": "0",
+                "spent": "0"
+            },
+            "culture": {
+                "type": "String",
+                "label": "Culture",
+                "value": "Select culture"
+            },
+            "concept": {
+                "type": "String",
+                "label": "Concept",
+                "value": "Select concept"
+            },
+            "cult": {
+                "type": "String",
+                "label": "Cult",
+                "value": "Select cult"
+            }
+        },
+        "status": {
+            "ego": {
+                "type": "Number",
+                "label": "Ego",
+                "current": "0",
+                "max": "2"
+            },
+            "spore-infestations": {
+                "type": "Number",
+                "label": "Spore Infestations",
+                "current": "0",
+                "max": "2"
+            },
+            "fleshwounds": {
+                "type": "Number",
+                "label": "Fleshwounds",
+                "current": "0",
+                "max": "2"
+            },
+            "trauma": {
+                "type": "Number",
+                "label": "Trauma",
+                "current": "0",
+                "max": "2"
+            }
+        },
+        "attributes": {
+            "min": "1",
+            "max": "6",
+            "body": {
+                "type": "Number",
+                "label": "Body",
+                "abbr": "BOD",
+                "cr-max": "",
+                "value": "1",
+                "skills": {
+                    "athletics": {
+                        "type": "Number",
+                        "label": "Athletics",
+                        "cr-max": "",
+                        "value": "0"
+                    },
+                    "brawl": {
+                        "type": "Number",
+                        "label": "Brawl",
+                        "cr-max": "",
+                        "value": "0"
+                    },
+                    "force": {
+                        "type": "Number",
+                        "label": "Force",
+                        "cr-max": "",
+                        "value": "0"
+                    },
+                    "melee": {
+                        "type": "Number",
+                        "label": "Melee",
+                        "cr-max": "",
+                        "value": "0"
+                    },
+                    "stamina": {
+                        "type": "Number",
+                        "label": "Stamina",
+                        "cr-max": "",
+                        "value": "0"
+                    },
+                    "toughness": {
+                        "type": "Number",
+                        "label": "Toughness",
+                        "cr-max": "",
+                        "value": "0"
+                    }
+                }
+            },
+            "agility": {
+                "type": "Number",
+                "label": "Agility",
+                "abbr": "AGI",
+                "cr-max": "",
+                "value": "1",
+                "skills": {
+                    "crafting": {
+                        "type": "Number",
+                        "label": "Crafting",
+                        "cr-max": "",
+                        "value": "0"
+                    },
+                    "dexterity": {
+                        "type": "Number",
+                        "label": "Dexterity",
+                        "cr-max": "",
+                        "value": "0"
+                    },
+                    "navigation": {
+                        "type": "Number",
+                        "label": "Navigation",
+                        "cr-max": "",
+                        "value": "0"
+                    },
+                    "mobility": {
+                        "type": "Number",
+                        "label": "Mobility",
+                        "cr-max": "",
+                        "value": "0"
+                    },
+                    "projectiles": {
+                        "type": "Number",
+                        "label": "Projectiles",
+                        "cr-max": "",
+                        "value": "0"
+                    },
+                    "stealth": {
+                        "type": "Number",
+                        "label": "Stealth",
+                        "cr-max": "",
+                        "value": "0"
+                    }
+                }
+            },
+            "charisma": {
+                "type": "Number",
+                "label": "Charisma",
+                "abbr": "CHA",
+                "cr-max": "",
+                "value": "1",
+                "skills": {
+                    "arts": {
+                        "type": "Number",
+                        "label": "Arts",
+                        "cr-max": "",
+                        "value": "0"
+                    },
+                    "conduct": {
+                        "type": "Number",
+                        "label": "Conduct",
+                        "cr-max": "",
+                        "value": "0"
+                    },
+                    "expression": {
+                        "type": "Number",
+                        "label": "Expression",
+                        "cr-max": "",
+                        "value": "0"
+                    },
+                    "leadership": {
+                        "type": "Number",
+                        "label": "Leadership",
+                        "cr-max": "",
+                        "value": "0"
+                    },
+                    "negotiation": {
+                        "type": "Number",
+                        "label": "Negotiation",
+                        "cr-max": "",
+                        "value": "0"
+                    },
+                    "seduction": {
+                        "type": "Number",
+                        "label": "Seduction",
+                        "cr-max": "",
+                        "value": "0"
+                    }
+                }
+            },
+            "intellect": {
+                "type": "Number",
+                "label": "Intelect",
+                "abbr": "INT",
+                "cr-max": "",
+                "value": "1",
+                "skills": {
+                    "artifact-lore": {
+                        "type": "Number",
+                        "label": "Artifact Lore",
+                        "cr-max": "",
+                        "value": "0"
+                    },
+                    "engineering": {
+                        "type": "Number",
+                        "label": "Engineering",
+                        "cr-max": "",
+                        "value": "0"
+                    },
+                    "focus": {
+                        "type": "Number",
+                        "label": "Focus",
+                        "cr-max": "",
+                        "value": "0"
+                    },
+                    "legends": {
+                        "type": "Number",
+                        "label": "Legends",
+                        "cr-max": "",
+                        "value": "0"
+                    },
+                    "medicine": {
+                        "type": "Number",
+                        "label": "Medicine",
+                        "cr-max": "",
+                        "value": "0"
+                    },
+                    "science": {
+                        "type": "Number",
+                        "label": "Science",
+                        "cr-max": "",
+                        "value": "0"
+                    }
+                }
+            },
+            "psyche": {
+                "type": "Number",
+                "label": "Psyche",
+                "abbr": "PSY",
+                "cr-max": "",
+                "value": "1",
+                "skills": {
+                    "cunning": {
+                        "type": "Number",
+                        "label": "Cunning",
+                        "cr-max": "",
+                        "value": "0"
+                    },
+                    "deception": {
+                        "type": "Number",
+                        "label": "Deception",
+                        "cr-max": "",
+                        "value": "0"
+                    },
+                    "domination": {
+                        "type": "Number",
+                        "label": "Domination",
+                        "cr-max": "",
+                        "value": "0"
+                    },
+                    "faith": {
+                        "type": "Number",
+                        "label": "Faith",
+                        "cr-max": "",
+                        "value": "0"
+                    },
+                    "reaction": {
+                        "type": "Number",
+                        "label": "Reaction",
+                        "cr-max": "",
+                        "value": "0"
+                    },
+                    "willpower": {
+                        "type": "Number",
+                        "label": "Willpower",
+                        "cr-max": "",
+                        "value": "0"
+                    }
+                }
+            },
+            "instinct": {
+                "type": "Number",
+                "label": "Instinct",
+                "abbr": "INS",
+                "cr-max": "",
+                "value": "1",
+                "skills": {
+                    "empathy": {
+                        "type": "Number",
+                        "label": "Empathy",
+                        "cr-max": "",
+                        "value": "0"
+                    },
+                    "orienteering": {
+                        "type": "Number",
+                        "label": "Orienteering",
+                        "cr-max": "",
+                        "value": "0"
+                    },
+                    "perception": {
+                        "type": "Number",
+                        "label": "Perception",
+                        "cr-max": "",
+                        "value": "0"
+                    },
+                    "primal": {
+                        "type": "Number",
+                        "label": "Primal",
+                        "cr-max": "",
+                        "value": "0"
+                    },
+                    "survival": {
+                        "type": "Number",
+                        "label": "Survival",
+                        "cr-max": "",
+                        "value": "0"
+                    },
+                    "taming": {
+                        "type": "Number",
+                        "label": "Taming",
+                        "cr-max": "",
+                        "value": "0"
+                    }
+                }
+            }
+        },
+        "origins": {
+            "allies": {
+                "type": "Number",
+                "label": "Allies",
+                "cr-max": "3",
+                "value": "0"
+            },
+            "authority": {
+                "type": "Number",
+                "label": "Authority",
+                "cr-max": "3",
+                "value": "0"
+            },
+            "network": {
+                "type": "Number",
+                "label": "Network",
+                "cr-max": "3",
+                "value": "0"
+            },
+            "renown": {
+                "type": "Number",
+                "label": "Renown",
+                "cr-max": "3",
+                "value": "0"
+            },
+            "resources": {
+                "type": "Number",
+                "label": "Resources",
+                "cr-max": "3",
+                "value": "0"
+            },
+            "secrets": {
+                "type": "Number",
+                "label": "Secrets",
+                "cr-max": "3",
+                "value": "0"
+            }
+        }
     },
-    "health": {
-      "type": "Number",
-      "label": "Health",
-      "value": 10,
-      "max": 10
-    },
-    "power": {
-      "type": "Number",
-      "label": "Power",
-      "value": 0,
-      "max": 0
+    "item": {
+        "data": {
+            "description": {
+                "type": "String",
+                "label": "Description"
+            }
+        }
     }
-  }
-},
-"item": {
-  "data": {
-    "description": {
-      "type": "String",
-      "label": "Description"
-    }
-  }
-}
 }
